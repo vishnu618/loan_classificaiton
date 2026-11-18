@@ -8,7 +8,7 @@ st.set_page_config(page_title="Loan Classification",page_icon="logo (1).png",lay
 
 with st.sidebar:
     st.title("Loan Classification")
-    st.image("logo (1).png")
+    st.image("logo(1).png")
 
 
 # load the model 
@@ -17,7 +17,7 @@ with open("best_model_pipeline.pkl","rb") as file:
 
 # load cleaned dataframe 
 
-df = pd.read_csv("cleaned_data.csv")
+df = pd.read_csv("loan_data_cleaned.csv")
 
 # user Input 
 col1,col2,col3,col4 = st.columns(4,border=True)
